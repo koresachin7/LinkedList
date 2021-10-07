@@ -2,7 +2,7 @@ package com.bridgelabz;
 
 import org.junit.Assert;
 import org.junit.Test;
-public class MyNodeTest{
+public class MyNodeTest {
     @Test
     public void given3NumberWhenLinkedShouldPassedLinkedListTest(){
         MyNode<Integer> myFirstNode = new MyNode<>(56);
