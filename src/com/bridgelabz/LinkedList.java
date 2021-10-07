@@ -1,7 +1,8 @@
 package com.bridgelabz;
 
 /**
- * Purpose - To search LinkedList to find Node position of value 30
+ * Purpose - To insert another element 40 after 30.
+ * Final sequence to be printed - 56 - 30 - 40 - 70
  * @author - Sachin kore
  * @version - 16.0
  */
@@ -15,8 +16,8 @@ public class LinkedList {
         myLinkedList.append(mySecondNode);
         myLinkedList.append(myThirdNode);
         myLinkedList.displayNode();
-        // Getiing the position of element 30.
-        myLinkedList.searchElement();
+        myLinkedList.insertAtPosition(40, 2);
+        myLinkedList.displayNode();
 
     }
 }
