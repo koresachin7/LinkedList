@@ -1,5 +1,7 @@
 package com.bridgelabz;
-
+/**
+ * Purpose - To create methods for Linked List operation.
+ */
 public class MyLinkedList {
     public INode head;
     public INode tail;
@@ -9,6 +11,9 @@ public class MyLinkedList {
         this.tail = null;
     }
 
+    /**
+     * This method is used to add elements to the LinkedList
+     */
     public void add(INode newNode) {
         if (this.tail == null) {
             this.tail = newNode;
@@ -22,6 +27,27 @@ public class MyLinkedList {
             head.setNext(tempNode);
         }
     }
+
+    /**
+     * This method is used to append elements to the LinkedList
+     * @param newNode
+     */
+
+    public void append(INode newNode) {
+        if (this.tail == null)
+            this.tail = newNode;
+
+        if (this.head == null)
+            this.head = newNode;
+
+        else {
+            tail.setNext(newNode);
+            tail=newNode;
+
+        }
+    }
+
+
     public void displayNode () {
         INode current = head;
 
