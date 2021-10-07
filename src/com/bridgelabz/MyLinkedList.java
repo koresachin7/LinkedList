@@ -64,6 +64,17 @@ public class MyLinkedList {
         else
             head = head.getNext();
     }
+    /**
+     * Method to delete last element in the LinkedList
+     */
+    public void popLastNode() {
+        INode tempNode = head;
+        while (tempNode.getNext() != tail) {
+            tempNode = tempNode.getNext();
+        }
+        tempNode.setNext(null);
+        tail = tempNode;
+    }
 
     /**
      * This method is used to display the sequence
